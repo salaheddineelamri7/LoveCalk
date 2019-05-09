@@ -10,26 +10,47 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet var percentLabel: UILabel!
+    @IBOutlet var shareButton: UIView!
+    @IBOutlet var navBar: UINavigationBar!
+    var percent:Int?
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        shareButton.layer.cornerRadius =  shareButton.frame.height / 2
+        
+        navBar.setBackgroundImage(UIImage(), for: .default)
+        navBar.shadowImage = UIImage()
+        self.navigationController?.isNavigationBarHidden = true
+        
+        shareButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.shareButtonTapped)))
+        
+        if let percent = percent {
+            percentLabel.text = "\(percent)%"
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func shareButtonTapped(gesture:UITapGestureRecognizer){
+ 
+            
+            let myApp = NSURL(string:"")
+            let share = [myApp]
+            let activityViewController = UIActivityViewController(activityItems: share, applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
+        
     }
-    */
 
 }

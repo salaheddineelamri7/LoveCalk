@@ -13,6 +13,7 @@
 		2AF33D83223BAE4C00C7A887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF33D81223BAE4C00C7A887 /* Main.storyboard */; };
 		2AF33D85223BAE5500C7A887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF33D84223BAE5500C7A887 /* Assets.xcassets */; };
 		2AF33D88223BAE5600C7A887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF33D86223BAE5600C7A887 /* LaunchScreen.storyboard */; };
+		DFEAD134209948ECE843C874 /* Pods_LoveCalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A733262E7DF97ADD8BF6A3 /* Pods_LoveCalk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		2AF33D84223BAE5500C7A887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AF33D87223BAE5600C7A887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AF33D89223BAE5600C7A887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61A733262E7DF97ADD8BF6A3 /* Pods_LoveCalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveCalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D28EB46261D4F94EA87BBF /* Pods-LoveCalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveCalk.debug.xcconfig"; path = "Target Support Files/Pods-LoveCalk/Pods-LoveCalk.debug.xcconfig"; sourceTree = "<group>"; };
+		E9EAAD6F8CE27FCEA9E3DB88 /* Pods-LoveCalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveCalk.release.xcconfig"; path = "Target Support Files/Pods-LoveCalk/Pods-LoveCalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEAD134209948ECE843C874 /* Pods_LoveCalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2AF33D7C223BAE4B00C7A887 /* LoveCalk */,
 				2AF33D7B223BAE4B00C7A887 /* Products */,
+				A1BCBF757D8CA23C1F12EA9E /* Pods */,
+				9185CA3C948A2926537BE3A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = LoveCalk;
 			sourceTree = "<group>";
 		};
+		9185CA3C948A2926537BE3A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61A733262E7DF97ADD8BF6A3 /* Pods_LoveCalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1BCBF757D8CA23C1F12EA9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8D28EB46261D4F94EA87BBF /* Pods-LoveCalk.debug.xcconfig */,
+				E9EAAD6F8CE27FCEA9E3DB88 /* Pods-LoveCalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AF33D8C223BAE5600C7A887 /* Build configuration list for PBXNativeTarget "LoveCalk" */;
 			buildPhases = (
+				47CE22EAA562C3FDD7AB5166 /* [CP] Check Pods Manifest.lock */,
 				2AF33D76223BAE4B00C7A887 /* Sources */,
 				2AF33D77223BAE4B00C7A887 /* Frameworks */,
 				2AF33D78223BAE4B00C7A887 /* Resources */,
+				ECBDDD68950598A25290592D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47CE22EAA562C3FDD7AB5166 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoveCalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECBDDD68950598A25290592D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveCalk/Pods-LoveCalk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveCalk/Pods-LoveCalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2AF33D76223BAE4B00C7A887 /* Sources */ = {
@@ -282,6 +358,7 @@
 		};
 		2AF33D8D223BAE5600C7A887 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D28EB46261D4F94EA87BBF /* Pods-LoveCalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -303,6 +380,7 @@
 		};
 		2AF33D8E223BAE5600C7A887 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9EAAD6F8CE27FCEA9E3DB88 /* Pods-LoveCalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -1,0 +1,6 @@
+framework module Pods_LoveCalk {
+  umbrella header "Pods-LoveCalk-umbrella.h"
+
+  export *
+  module * { export * }
+}
