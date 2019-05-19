@@ -83,7 +83,7 @@ class ViewController: UIViewController {
 		super.viewWillAppear(animated)
 		self.navigationController?.isNavigationBarHidden = true
         
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        interstitial = GADInterstitial(adUnitID: "")
         let request = GADRequest()
         interstitial.load(request)
 	}
