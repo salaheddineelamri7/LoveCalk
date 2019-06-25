@@ -80,7 +80,7 @@ class ResultViewController: UIViewController {
 
         navBar.setBackgroundImage(UIImage(), for: .default)
         navBar.shadowImage = UIImage()
-        self.navigationController?.isNavigationBarHidden = true
+        
 //
        shareButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.shareButtonTapped)))
 //

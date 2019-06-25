@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.8.2)
   - Google-Mobile-Ads-SDK (7.42.0):
     - GoogleAppMeasurement (~> 5.7)
   - GoogleAppMeasurement (5.8.1):
@@ -30,21 +31,24 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
+  - Alamofire
   - Google-Mobile-Ads-SDK (= 7.42.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Google-Mobile-Ads-SDK: c7bec408202526ec4e9ccd025c00f9f30e9f8807
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 9d83c96426a1ab35a4b4ab9c6340127bc89c8264
+PODFILE CHECKSUM: e355fc1e3c12cf8cba7581650fef3bc45b7b95b4
 
 COCOAPODS: 1.6.1

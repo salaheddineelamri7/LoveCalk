@@ -27,11 +27,11 @@ class ViewController: UIViewController {
         
  
         
-        
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
-        addBannerViewToView(bannerView)
+//
+//        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+//        bannerView.rootViewController = self
+//       addBannerViewToView(bannerView)
 
 		
 		setupCustomTextField()
@@ -70,6 +70,8 @@ class ViewController: UIViewController {
     @objc func dismissKeyboard(sender:UITapGestureRecognizer) {
         view.endEditing(true)
     }
+    
+
 	
 	fileprivate func setupCustomTextField() {
 		
@@ -181,12 +183,4 @@ class ViewController: UIViewController {
 
 }
 
-extension Character {
-    var asciiValue: Int {
-        get {
-            let s = String(self).unicodeScalars
-            return Int(s[s.startIndex].value)
-        }
-    }
-}
 

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0431F9F1228CCC47004BD7A2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431F9F0228CCC47004BD7A2 /* SplashViewController.swift */; };
+		0438971422A2D43A0031D2D8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438971322A2D43A0031D2D8 /* Extensions.swift */; };
+		0438971622A2E5A90031D2D8 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438971522A2E5A90031D2D8 /* Helpers.swift */; };
+		047E1E1D2297699B00D128E2 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E1E1C2297699B00D128E2 /* HoroscopeViewController.swift */; };
+		047E1E212297763900D128E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E1E202297763900D128E2 /* Constants.swift */; };
+		0486B51F229F3BEF0080E7AF /* ResultHoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B51E229F3BEF0080E7AF /* ResultHoroscopeViewController.swift */; };
 		2A45E2BF223FA2A4000AD7A9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45E2BE223FA2A4000AD7A9 /* ResultViewController.swift */; };
 		2AF33D7E223BAE4C00C7A887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF33D7D223BAE4C00C7A887 /* AppDelegate.swift */; };
 		2AF33D80223BAE4C00C7A887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF33D7F223BAE4C00C7A887 /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 
 /* Begin PBXFileReference section */
 		0431F9F0228CCC47004BD7A2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0438971322A2D43A0031D2D8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0438971522A2E5A90031D2D8 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		047E1E1C2297699B00D128E2 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
+		047E1E202297763900D128E2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0486B51E229F3BEF0080E7AF /* ResultHoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHoroscopeViewController.swift; sourceTree = "<group>"; };
 		2A45E2BE223FA2A4000AD7A9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		2AF33D7A223BAE4B00C7A887 /* LoveCalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveCalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF33D7D223BAE4C00C7A887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +83,11 @@
 				2AF33D89223BAE5600C7A887 /* Info.plist */,
 				2A45E2BE223FA2A4000AD7A9 /* ResultViewController.swift */,
 				0431F9F0228CCC47004BD7A2 /* SplashViewController.swift */,
+				047E1E1C2297699B00D128E2 /* HoroscopeViewController.swift */,
+				047E1E202297763900D128E2 /* Constants.swift */,
+				0486B51E229F3BEF0080E7AF /* ResultHoroscopeViewController.swift */,
+				0438971322A2D43A0031D2D8 /* Extensions.swift */,
+				0438971522A2E5A90031D2D8 /* Helpers.swift */,
 			);
 			path = LoveCalk;
 			sourceTree = "<group>";
@@ -194,6 +209,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LoveCalk/Pods-LoveCalk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -201,6 +217,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -216,10 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0486B51F229F3BEF0080E7AF /* ResultHoroscopeViewController.swift in Sources */,
 				2AF33D80223BAE4C00C7A887 /* ViewController.swift in Sources */,
 				2AF33D7E223BAE4C00C7A887 /* AppDelegate.swift in Sources */,
+				0438971422A2D43A0031D2D8 /* Extensions.swift in Sources */,
+				0438971622A2E5A90031D2D8 /* Helpers.swift in Sources */,
 				2A45E2BF223FA2A4000AD7A9 /* ResultViewController.swift in Sources */,
+				047E1E1D2297699B00D128E2 /* HoroscopeViewController.swift in Sources */,
 				0431F9F1228CCC47004BD7A2 /* SplashViewController.swift in Sources */,
+				047E1E212297763900D128E2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

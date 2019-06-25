@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
         GADMobileAds.sharedInstance().start(completionHandler: nil)
 
-		
-        
         
 		return true
 	}

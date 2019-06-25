@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCR-J9-nlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-612" y="6"/>
+            <point key="canvasLocation" x="-879" y="6"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -190,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="6"/>
+            <point key="canvasLocation" x="786" y="6"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="uLq-Vk-gef">
@@ -343,12 +343,268 @@
             </objects>
             <point key="canvasLocation" x="1407" y="6"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gNc-EY-ObO">
+            <objects>
+                <viewController id="qK9-9g-GHs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IlZ-mF-eqE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rT4-YR-goj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="7An-qt-HX2">
+                                <rect key="frame" x="112.66666666666669" y="309.33333333333331" width="150" height="193.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Ud-Gf-nuB">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="81.333333333333329"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oC-ha-hg8">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="81.333333333333329"/>
+                                                <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jjg-v9-7xt">
+                                                <rect key="frame" x="78.999999999999986" y="0.0" width="71.000000000000014" height="81.333333333333329"/>
+                                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.50588235290000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="44G-2Q-wuD">
+                                        <rect key="frame" x="39.666666666666671" y="112.33333333333337" width="71" height="81.333333333333314"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Efg-Oc-mo3">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="81.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193.66666666666666" id="A0z-fl-rLd"/>
+                                    <constraint firstAttribute="width" constant="150" id="RNv-zl-eWU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mUu-S2-x6F" firstAttribute="bottom" secondItem="7An-qt-HX2" secondAttribute="bottom" constant="275" id="HTA-RU-9FG"/>
+                            <constraint firstAttribute="bottom" secondItem="rT4-YR-goj" secondAttribute="bottom" id="XCP-sM-nvK"/>
+                            <constraint firstItem="7An-qt-HX2" firstAttribute="leading" secondItem="mUu-S2-x6F" secondAttribute="leading" constant="112.67" id="XVp-wQ-fPc"/>
+                            <constraint firstItem="rT4-YR-goj" firstAttribute="leading" secondItem="mUu-S2-x6F" secondAttribute="leading" id="Z7H-dr-O96"/>
+                            <constraint firstItem="rT4-YR-goj" firstAttribute="top" secondItem="IlZ-mF-eqE" secondAttribute="top" id="dgh-v7-ADp"/>
+                            <constraint firstItem="mUu-S2-x6F" firstAttribute="trailing" secondItem="rT4-YR-goj" secondAttribute="trailing" id="mSX-Mu-5jx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mUu-S2-x6F"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECr-y1-Wwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="698.27586206896558"/>
+        </scene>
+        <!--Horoscope View Controller-->
+        <scene sceneID="uXE-6H-hDI">
+            <objects>
+                <viewController storyboardIdentifier="HoroscopeViewController" id="j0z-Dn-f7p" customClass="HoroscopeViewController" customModule="LoveCalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZu-0L-Oe3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l9I-pz-o9K">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="90" id="v26-cs-zxb" customClass="HoroscopeViewControllerCell" customModule="LoveCalk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v26-cs-zxb" id="HVw-zC-PD5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NV4-E8-xtk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.666666666666671"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancer" translatesAutoresizingMaskIntoConstraints="NO" id="GN8-TT-SFU">
+                                                            <rect key="frame" x="8" y="0.0" width="89.666666666666671" height="89.666666666666671"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="GN8-TT-SFU" secondAttribute="height" multiplier="1:1" id="Tqt-PP-8BA"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYy-Bc-ggN">
+                                                            <rect key="frame" x="109.66666666666666" y="28" width="68.666666666666657" height="24"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/21 - 04/27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHk-UR-D8D">
+                                                            <rect key="frame" x="109.66666666666669" y="54" width="81" height="18"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.10980392156862745" green="0.1803921568627451" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="GN8-TT-SFU" firstAttribute="height" secondItem="NV4-E8-xtk" secondAttribute="height" id="0Fh-Qo-jLx"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LYy-Bc-ggN" secondAttribute="trailing" constant="20" symbolic="YES" id="A1G-Wx-4hB"/>
+                                                        <constraint firstItem="GN8-TT-SFU" firstAttribute="centerY" secondItem="NV4-E8-xtk" secondAttribute="centerY" id="Ksf-YF-Y9j"/>
+                                                        <constraint firstItem="LYy-Bc-ggN" firstAttribute="leading" secondItem="GN8-TT-SFU" secondAttribute="trailing" constant="12" id="kae-gv-SxD"/>
+                                                        <constraint firstItem="LYy-Bc-ggN" firstAttribute="centerY" secondItem="GN8-TT-SFU" secondAttribute="centerY" constant="-5" id="naJ-Yj-QBH"/>
+                                                        <constraint firstItem="rHk-UR-D8D" firstAttribute="top" secondItem="LYy-Bc-ggN" secondAttribute="bottom" constant="2" id="sIt-jA-4cA"/>
+                                                        <constraint firstItem="rHk-UR-D8D" firstAttribute="leading" secondItem="LYy-Bc-ggN" secondAttribute="leading" id="sUY-nM-Qzw"/>
+                                                        <constraint firstItem="GN8-TT-SFU" firstAttribute="leading" secondItem="NV4-E8-xtk" secondAttribute="leading" constant="8" id="v16-tl-kzt"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="NV4-E8-xtk" secondAttribute="bottom" id="4h9-bz-mEL"/>
+                                                <constraint firstItem="NV4-E8-xtk" firstAttribute="top" secondItem="HVw-zC-PD5" secondAttribute="top" id="KEp-Bd-YYP"/>
+                                                <constraint firstItem="NV4-E8-xtk" firstAttribute="leading" secondItem="HVw-zC-PD5" secondAttribute="leading" id="hjs-AO-Tt5"/>
+                                                <constraint firstAttribute="trailing" secondItem="NV4-E8-xtk" secondAttribute="trailing" id="o6O-i9-tY0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="j0z-Dn-f7p" id="hYI-aj-9cS"/>
+                                    <outlet property="delegate" destination="j0z-Dn-f7p" id="AgJ-wP-YHQ"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od9-Fx-MeV">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="List Horoscope" id="J5t-Eh-rWj">
+                                        <barButtonItem key="leftBarButtonItem" image="icon_back" id="Tqt-vq-Sk0">
+                                            <connections>
+                                                <action selector="backButton:" destination="j0z-Dn-f7p" id="S3o-vl-kNS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.1803921568627451" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v5s-XE-UeG" firstAttribute="bottom" secondItem="l9I-pz-o9K" secondAttribute="bottom" id="Fdw-RH-Tdc"/>
+                            <constraint firstItem="l9I-pz-o9K" firstAttribute="leading" secondItem="v5s-XE-UeG" secondAttribute="leading" id="HSy-MP-wf9"/>
+                            <constraint firstItem="v5s-XE-UeG" firstAttribute="trailing" secondItem="l9I-pz-o9K" secondAttribute="trailing" id="I1r-9n-GjU"/>
+                            <constraint firstItem="l9I-pz-o9K" firstAttribute="top" secondItem="Od9-Fx-MeV" secondAttribute="bottom" id="nmb-Xt-bUd"/>
+                            <constraint firstItem="Od9-Fx-MeV" firstAttribute="leading" secondItem="v5s-XE-UeG" secondAttribute="leading" id="pVz-II-5V0"/>
+                            <constraint firstItem="Od9-Fx-MeV" firstAttribute="trailing" secondItem="v5s-XE-UeG" secondAttribute="trailing" id="rv2-Nk-N3g"/>
+                            <constraint firstItem="Od9-Fx-MeV" firstAttribute="top" secondItem="v5s-XE-UeG" secondAttribute="top" id="sbz-nt-2h9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v5s-XE-UeG"/>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="Od9-Fx-MeV" id="CDV-0G-9rx"/>
+                        <outlet property="tableView" destination="l9I-pz-o9K" id="saZ-vH-TFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5T-6z-ot0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.8000000000002" y="5.9113300492610836"/>
+        </scene>
+        <!--Result Horoscope View Controller-->
+        <scene sceneID="fJk-ER-KBu">
+            <objects>
+                <viewController storyboardIdentifier="ResultHoroscopeViewController" id="xfn-Gf-BdG" customClass="ResultHoroscopeViewController" customModule="LoveCalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHe-f5-0KN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D9b-pN-THV">
+                                <rect key="frame" x="40" y="104" width="295" height="29"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.18039215689999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="Week"/>
+                                </segments>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="daySegmentedControlTapped:" destination="xfn-Gf-BdG" eventType="valueChanged" id="Dkn-yi-jGz"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancer" translatesAutoresizingMaskIntoConstraints="NO" id="DdG-BK-0JT">
+                                <rect key="frame" x="75" y="172" width="225" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DdG-BK-0JT" secondAttribute="height" multiplier="15:8" id="fhy-GH-hcc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dsds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9Q-GM-lBU">
+                                <rect key="frame" x="40" y="292" width="295" height="23.666666666666686"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CP6-SV-kef">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Detail" id="sGi-x1-ZTe">
+                                        <barButtonItem key="leftBarButtonItem" image="icon_back" id="dNt-sc-xtg">
+                                            <connections>
+                                                <action selector="backButton:" destination="xfn-Gf-BdG" id="lTt-sg-Mqp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aWq-rP-0Dh">
+                                <rect key="frame" x="16" y="331.66666666666674" width="343" height="438.33333333333326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.1803921568627451" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y9Q-GM-lBU" firstAttribute="top" secondItem="DdG-BK-0JT" secondAttribute="bottom" id="3Ga-bu-52v"/>
+                            <constraint firstItem="hIo-As-QOs" firstAttribute="trailing" secondItem="y9Q-GM-lBU" secondAttribute="trailing" constant="40" id="6q9-kz-68O"/>
+                            <constraint firstItem="CP6-SV-kef" firstAttribute="leading" secondItem="hIo-As-QOs" secondAttribute="leading" id="7TK-9X-m7b"/>
+                            <constraint firstItem="hIo-As-QOs" firstAttribute="bottom" secondItem="aWq-rP-0Dh" secondAttribute="bottom" constant="8" id="9l4-4r-3OA"/>
+                            <constraint firstItem="DdG-BK-0JT" firstAttribute="top" secondItem="D9b-pN-THV" secondAttribute="bottom" constant="40" id="FgL-9R-LZF"/>
+                            <constraint firstItem="DdG-BK-0JT" firstAttribute="width" secondItem="fHe-f5-0KN" secondAttribute="width" multiplier="0.6" id="Mpn-95-U9y"/>
+                            <constraint firstItem="hIo-As-QOs" firstAttribute="trailing" secondItem="aWq-rP-0Dh" secondAttribute="trailing" constant="16" id="PU4-j1-7Kn"/>
+                            <constraint firstItem="D9b-pN-THV" firstAttribute="leading" secondItem="hIo-As-QOs" secondAttribute="leading" constant="40" id="XzM-AF-W7v"/>
+                            <constraint firstAttribute="trailing" secondItem="CP6-SV-kef" secondAttribute="trailing" id="eIz-Wa-fpC"/>
+                            <constraint firstItem="aWq-rP-0Dh" firstAttribute="top" secondItem="y9Q-GM-lBU" secondAttribute="bottom" constant="16" id="emp-hX-jD3"/>
+                            <constraint firstItem="CP6-SV-kef" firstAttribute="top" secondItem="hIo-As-QOs" secondAttribute="top" id="fOL-cB-zfk"/>
+                            <constraint firstItem="DdG-BK-0JT" firstAttribute="centerX" secondItem="fHe-f5-0KN" secondAttribute="centerX" id="i5m-zA-TJ3"/>
+                            <constraint firstItem="y9Q-GM-lBU" firstAttribute="leading" secondItem="hIo-As-QOs" secondAttribute="leading" constant="40" id="jL1-4I-5iE"/>
+                            <constraint firstItem="aWq-rP-0Dh" firstAttribute="leading" secondItem="hIo-As-QOs" secondAttribute="leading" constant="16" id="jRX-Q2-ehr"/>
+                            <constraint firstItem="D9b-pN-THV" firstAttribute="top" secondItem="CP6-SV-kef" secondAttribute="bottom" constant="16" id="kC6-UZ-oEl"/>
+                            <constraint firstItem="hIo-As-QOs" firstAttribute="trailing" secondItem="D9b-pN-THV" secondAttribute="trailing" constant="40" id="obM-Fv-O0X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hIo-As-QOs"/>
+                    </view>
+                    <connections>
+                        <outlet property="daySegmentedControl" destination="D9b-pN-THV" id="neP-u4-Yul"/>
+                        <outlet property="descriptionLabel" destination="aWq-rP-0Dh" id="6s3-Fz-XKd"/>
+                        <outlet property="navBar" destination="CP6-SV-kef" id="Vpg-yS-w2X"/>
+                        <outlet property="titleLabel" destination="y9Q-GM-lBU" id="ZOV-MG-77d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECo-Lk-5EV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2860" y="12.143928035982009"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back_btn" width="466" height="84"/>
         <image name="background" width="750" height="1339"/>
         <image name="bg" width="750" height="1339"/>
         <image name="bg_result" width="354" height="354"/>
+        <image name="cancer" width="340" height="337"/>
         <image name="hearts" width="320" height="320"/>
         <image name="icon_back" width="34" height="34"/>
         <image name="icon_home" width="48.666667938232422" height="48.666667938232422"/>

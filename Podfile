@@ -8,6 +8,7 @@ target 'LoveCalk' do
   # Pods for LoveCalk
 
   pod 'Google-Mobile-Ads-SDK','7.42.0'
+  pod 'Alamofire'
 	 
 
 end
