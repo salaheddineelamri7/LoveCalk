@@ -28,12 +28,12 @@ class SplashViewController: UIViewController {
     {
         timer?.invalidate()
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let ViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! ViewController
-        self.navigationController?.pushViewController(ViewController, animated: true)
-        
-        
-//        let ViewController = storyBoard.instantiateViewController(withIdentifier: "HoroscopeViewController") as! HoroscopeViewController
+//        let ViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! ViewController
 //        self.navigationController?.pushViewController(ViewController, animated: true)
+		
+        
+        let ViewController = storyBoard.instantiateViewController(withIdentifier: "DashViewController") as! DashViewController
+        self.navigationController?.pushViewController(ViewController, animated: true)
     }
    
 
